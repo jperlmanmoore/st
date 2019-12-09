@@ -39,13 +39,9 @@ export default class ContactUs extends React.Component {
     feedback: "",
   }
 
-  handleChange = e => {
-    const { name, value } = e.target
-    this.setState({
-      [name]: value
-    })
-    console.log(e.target.value)
-  };
+  handleChange = (param, e) => {
+    this.setState({ [param]: e.target.value })
+  }
 
   handleSubmit = e => {
     e.preventDefault();
@@ -61,11 +57,17 @@ export default class ContactUs extends React.Component {
       message_html: feedback
 
     }
-    this.sendEmail(templateId, templateParams)
-    this.resentForm()
+    emailjs.sendForm('jperlmanmoore_gmail_com', 'template_OoG9Ihf4', templateParams, 'user_UqnZQoorvEdUtf7NT2dM1')
+      .then((result) => {
+        console.log('SUCCESS!', result.text);
+      }, (err) => {
+        console.log('FAILED...', err.text);
+      });
+
+    this.resetForm()
   };
 
-  resentForm() {
+  resetForm() {
     this.setState({
       name: '',
       phone: '',
@@ -74,15 +76,15 @@ export default class ContactUs extends React.Component {
     })
   };
 
-  sendEmail = e => {
-    e.preventDefault();
-    emailjs.sendForm('jperlmanmoore_gmail_com', 'template_OoG9Ihf4', e.target, 'user_UqnZQoorvEdUtf7NT2dM1')
-      .then((result) => {
-        console.log('SUCCESS!', result.text);
-      }, (err) => {
-        console.log('FAILED...', err.text);
-      })
-    }
+  // sendEmail = e => {
+  //   e.preventDefault();
+  //   emailjs.sendForm('jperlmanmoore_gmail_com', 'template_OoG9Ihf4', e.target, 'user_UqnZQoorvEdUtf7NT2dM1')
+  //     .then((result) => {
+  //       console.log('SUCCESS!', result.text);
+  //     }, (err) => {
+  //       console.log('FAILED...', err.text);
+  //     })
+  //   };
 
     render() {
     return (
@@ -93,7 +95,7 @@ export default class ContactUs extends React.Component {
             type="text"
             id="name"
             value={this.state.name}
-            onChange={this.handleChange}
+            onChange={this.handleChange.bind(this, 'name')}
             name="name"
             placeholder="name (required)"
           />
@@ -101,13 +103,13 @@ export default class ContactUs extends React.Component {
             id="email"
             type="email"
             value={this.state.email}
-            onChange={this.handleChange}
+            onChange={this.handleChange.bind(this, 'email')}
             name="email"
             placeholder="email (required)"
           />
           <textarea
             id="message"
-            onChange={this.handleChange}
+            onChange={this.handleChange.bind(this, 'feedback')}
             placeholder="Type your message here"
             required
             name="feedback"
