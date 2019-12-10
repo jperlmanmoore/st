@@ -1,36 +1,6 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 
-// export default function ContactUs() {
-
-//     function sendEmail(e) {
-//       e.preventDefault();
-
-//       emailjs.sendForm('jperlmanmoore_gmail_com','template_OoG9Ihf4', e.target, 'user_UqnZQoorvEdUtf7NT2dM1')
-//       .then((result) => {
-//          console.log('SUCCESS!', result.text);
-//       }, (err) => {
-//          console.log('FAILED!', err.text);
-
-//       });
-//     }
-
-//     return (
-//       <form className="contact-form" onSubmit={sendEmail}>
-//         <label>Name</label>
-//         <input type="text" name="user_name" required  />
-//         <label>Phone Number</label>
-//         <input type="phone number" name="contact_number" />
-//         <label>Email</label>
-//         <input type="email" name="user_email" />
-//         <label>Message</label>
-//         <textarea name="message" />
-//         <input type="submit" value="Send" />
-//       </form>
-//     );
-//   }
-
-
 export default class ContactUs extends React.Component {
   state = {
     name: '',
@@ -74,17 +44,6 @@ export default class ContactUs extends React.Component {
 
     this.resetForm()
   };
-
-  // sendEmail = e => {
-  //   e.preventDefault();
-  //   // console.log(e.target)
-  //   emailjs.sendForm('jperlmanmoore_gmail_com', 'template_OoG9Ihf4', e.target, 'user_UqnZQoorvEdUtf7NT2dM1')
-  //     .then((result) => {
-  //       console.log('SUCCESS!', result.text);
-  //     }, (err) => {
-  //       console.log('FAILED...', err.text);
-  //     })
-  //   };
 
     render() {
     return (
