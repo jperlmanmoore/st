@@ -36,48 +36,48 @@ export default class ContactUs extends React.Component {
     name: '',
     email: '',
     phone: '',
-    feedback: "",
+    feedback: '',
   }
 
   handleChange = (param, e) => {
     this.setState({ [param]: e.target.value })
   }
 
+  resetForm() {
+    this.setState({
+      name: '',
+      email: '',
+      phone: '',
+      feedback: '',
+    })
+  };
+
   handleSubmit = e => {
     e.preventDefault();
-    console.log('handleSubmit');
     const templateId = 'template_OoG9Ihf4';
     const {name, email, phone, feedback} = this.state
 
     let templateParams = {
       from_name: name,
       email: email,
-      to_name: 'jperlmanmoore@gmail.com',
+      to_name: 'jperlmanmoore_gmail_com',
       phone: phone,
       message_html: feedback
-
     }
-    emailjs.sendForm('jperlmanmoore_gmail_com', 'template_OoG9Ihf4', templateParams, 'user_UqnZQoorvEdUtf7NT2dM1')
-      .then((result) => {
-        console.log('SUCCESS!', result.text);
-      }, (err) => {
-        console.log('FAILED...', err.text);
-      });
+  
+      emailjs.send('jperlmanmoore_gmail_com', templateId, templateParams, 'user_UqnZQoorvEdUtf7NT2dM1')
+        .then((result) => {
+          console.log('SUCCESS!', result.text);
+        }, (err) => {
+          console.log('FAILED...', err.text);
+        });
 
     this.resetForm()
   };
 
-  resetForm() {
-    this.setState({
-      name: '',
-      phone: '',
-      email: '',
-      feedback: '',
-    })
-  };
-
   // sendEmail = e => {
   //   e.preventDefault();
+  //   // console.log(e.target)
   //   emailjs.sendForm('jperlmanmoore_gmail_com', 'template_OoG9Ihf4', e.target, 'user_UqnZQoorvEdUtf7NT2dM1')
   //     .then((result) => {
   //       console.log('SUCCESS!', result.text);
@@ -89,11 +89,11 @@ export default class ContactUs extends React.Component {
     render() {
     return (
         
-        <form className="webpage-mailing" onSubmit={this.sendEmail}>
+        <form className="webpage-mailing" onSubmit={this.handleSubmit}>
           <h1>Contact Us</h1>
           <input
-            type="text"
             id="name"
+            type="text"
             value={this.state.name}
             onChange={this.handleChange.bind(this, 'name')}
             name="name"
@@ -107,8 +107,17 @@ export default class ContactUs extends React.Component {
             name="email"
             placeholder="email (required)"
           />
+          <input
+            id="phone"
+            type="tel"
+            value={this.state.phone}
+            onChange={this.handleChange.bind(this, 'phone')}
+            name="phone"
+            placeholder="phone (required)"
+          />
           <textarea
             id="message"
+            type="text"
             onChange={this.handleChange.bind(this, 'feedback')}
             placeholder="Type your message here"
             required
