@@ -20,7 +20,7 @@ export default function YouTubePlayer(props) {
                         width: "75%",
                         height: "75%"
                     }}
-                    src={props.src}
+                    src={props.link}
                     frameBorder="0"
                 />
             </div>

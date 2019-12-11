@@ -10,6 +10,8 @@ import {
   Switch,
   Route,
   Link,
+  useParams,
+  useRouteMatch
 } from "react-router-dom";
 
 export default function Navbar() {

@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+// import UpcomingEvents from '../upcomingevents/UpcomingEvents'
 import {
   Switch,
   Route,
@@ -16,32 +17,40 @@ export default function Events() {
     return (
       <div>
         <h2>Events</h2>
-        <nav>
-            <Link to={`${url}/rendering`}>Special Events</Link>
-            <Link to={`${url}/components`}>Upcoming Events</Link>
-        </nav>
+        <ul>
+          <li>
+            <Link to={`${url}/123`}>Rendering with React</Link>
+          </li>
+          <li>
+            <Link to={`${url}`}>Components</Link>
+          </li>
+          <li>
+            <Link to={`${url}`}>Props v. State</Link>
+          </li>
+        </ul>
   
         <Switch>
           <Route exact path={path}>
+            <h3>Please select a topic.</h3>
           </Route>
-          <Route path={`${path}/:eventId`}>
-            <Topic />
+          <Route path={`${path}/:topicId`}>
+            <Event />
           </Route>
         </Switch>
       </div>
     );
   }
   
-  function Topic() {
+  function Event() {
     // The <Route> that rendered this component has a
-    // path of `/topics/:topicId`. The `:topicId` portion
+    // path of `/Events/:topicId`. The `:topicId` portion
     // of the URL indicates a placeholder that we can
     // get from `useParams()`.
-    let { eventId } = useParams();
+    let { topicId } = useParams();
   
     return (
       <div>
-        <h3>{eventId}</h3>
+        <h3>{topicId}</h3>
       </div>
     );
   }
