@@ -4,10 +4,14 @@ import {Link} from "react-router-dom"
 function Header() {
     return (
         <header>
-            <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/profile">Profile</Link></li>
-            </ul>
+            <nav>
+               <Link to="/">Home</Link>
+               <Link to="/events">Events</Link>
+               <Link to="/media">Media</Link>
+               <Link to="/about">About</Link>
+               <Link to="/contactus">Contact Us</Link>
+               <Link to="/donors">Donors</Link>
+             </nav>
         </header>
     )
 }

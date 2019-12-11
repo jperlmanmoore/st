@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Home() {
+function News() {
     return (
       <div>
-        <h2>Storytellers Macon</h2>
+        <h2>News</h2>
       </div>
     );
   };
 
-export default Home
+export default News

@@ -1,32 +1,12 @@
 import React from 'react';
-import {
-  Switch,
-  Route,
-  Link,
-  useParams,
-  useRouteMatch
-} from "react-router-dom";
-import YouTubePlayer from '../youtube/Youtube';
+import YouTubePlayer from "../../components/youtube/YouTubePlayer";
 
-
-// each time you want to add a new video copy the line with "<YouTubePlayer..." and replace the link with the one you want!
-export default function Media() {
-  let { path, url } = useRouteMatch();
+function YouTube() {
     return (
-      <>
-      <nav>
-            <Link to={`${url}/YouTube`}>YouTube</Link>
-            <Link to={`${url}/Media`}>Media</Link>
-        </nav>
-
-        <Switch>
-          <Route exact path={path}>
-          </Route>
-          <Route path={`${path}`}>
-          </Route>
-        </Switch>
-
       <div>
+        <h2>YouTube</h2>
+
+        <div>
           <YouTubePlayer link="https://www.youtube.com/embed/me2oKESuc8w"/>
           <YouTubePlayer link="https://www.youtube.com/embed/X-uAGcMrKss"/>
           <YouTubePlayer link="https://www.youtube.com/embed/wZ_QhXpPkws"/>
@@ -40,7 +20,9 @@ export default function Media() {
           <YouTubePlayer link="https://www.youtube.com/embed/zzXVeXp3fCQ"/>
           <YouTubePlayer link="https://www.youtube.com/embed/2v9QuMYPXLs"/>
       </div>
-      </>
+
+      </div>
     );
   };
 
+export default YouTube
