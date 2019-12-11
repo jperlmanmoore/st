@@ -1,55 +1,77 @@
-// import React from "react";
-// import Home from '../../pages/home/Home';
-// import Events from '../../pages/events/Events';
-// import Media from '../../pages/media/Media';
-// import About from '../../pages/about/About';
-// import Donors from '../../pages/donors/Donors';
-// import ContactUs from '../../pages/contactus/ContactUs';
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   Link,
-//   useParams,
-//   useRouteMatch
-// } from "react-router-dom";
+import React, { useState } from 'react';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+//   NavbarText
+} from 'reactstrap';
 
-// export default function Navbar() {
-//     return (
-//       <Router>
-//         <div>
-//           <nav>
-//               <Link to="/">Home</Link>
-//               <Link to="/events">Events</Link>
-//               <Link to="/media">Media</Link>
-//               <Link to="/about">About</Link>
-//               <Link to="/contactus">Contact Us</Link>
-//               <Link to="/donors">Donors</Link>
-//             </nav>
-  
-//           <hr />
-  
-//           <Switch>
-//             <Route exact path="/">
-//               <Home />
-//             </Route>
-//             <Route path="/events">
-//               <Events />
-//             </Route>
-//             <Route path="/about">
-//               <About />
-//             </Route>
-//             <Route path="/donors">
-//               <Donors />
-//             </Route>
-//             <Route path="/media">
-//               <Media />
-//             </Route>
-//             <Route path="/contactus">
-//               <ContactUs />
-//             </Route>
-//           </Switch>
-//         </div>
-//       </Router>
-//     );
-//   }
+const Example = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
+
+  return (
+    <div className="clearfix">
+      <Navbar color="light" light expand="md">
+        <NavbarBrand className="float-left" href="/">Storytellers Macon</NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="mr-auto float-right" navbar>
+            <NavItem>
+              <NavLink href="/about/">About</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/contactus/">Contact</NavLink>
+            </NavItem>
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle nav caret>
+                Support
+              </DropdownToggle>
+              <DropdownMenu right>
+                <DropdownItem>
+                <NavItem>
+              <NavLink href="/support/donors">Donors</NavLink>
+            </NavItem>
+                </DropdownItem>
+                <DropdownItem>
+                <NavItem>
+              <NavLink href="/support/sponsors">Upcoming Events</NavLink>
+            </NavItem>
+                </DropdownItem>              
+              </DropdownMenu>
+            </UncontrolledDropdown>
+            
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle nav caret>
+                Events
+              </DropdownToggle>
+              <DropdownMenu right>
+                <DropdownItem>
+                <NavItem>
+              <NavLink href="/events/specialevents">Special Events</NavLink>
+            </NavItem>
+                </DropdownItem>
+                <DropdownItem>
+                <NavItem>
+              <NavLink href="/events/upcomingevents">Upcoming Events</NavLink>
+            </NavItem>
+                </DropdownItem>              
+              </DropdownMenu>
+            </UncontrolledDropdown>
+          </Nav>
+        </Collapse>
+      </Navbar>
+    </div>
+  );
+}
+
+export default Example;

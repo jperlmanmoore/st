@@ -1,16 +1,18 @@
-import React from "react";
-import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
-import Home from "./pages/home/Home";
-import About from "./pages/about/About";
-import ContactUS from './pages/contactus/ContactUs';
-import Media from './pages/media/Media';
-import Donors from './pages/donors/Donors';
-import Events from './pages/events/Events';
-import SpecialEvents from './pages/events/SpecialEvents';
-import UpcomingEvents from './pages/events/UpcomingEvents';
-import Youtube from './pages/media/Youtube';
-import News from './pages/media/News';
+import React from "react"
+import Header from "./components/header/Header"
+import Footer from "./components/footer/Footer"
+import Home from "./pages/home/Home"
+import About from "./pages/about/About"
+import ContactUS from './pages/contactus/ContactUs'
+import Media from './pages/media/Media'
+import Support from './pages/support/Support'
+import Sponsors from "./pages/support/Sponsors"
+import Donors from './pages/support/Donors'
+import Events from './pages/events/Events'
+import SpecialEvents from './pages/events/SpecialEvents'
+import UpcomingEvents from './pages/events/UpcomingEvents'
+import Youtube from './pages/media/Youtube'
+import News from './pages/media/News'
 
 import { Switch, Route } from "react-router-dom"
 
@@ -50,8 +52,14 @@ function App() {
                 <Route path="/contactus">
                     <ContactUS />
                 </Route>
-                <Route path="/donors">
+                <Route exact path="/support">
+                    <Support />
+                </Route>
+                <Route path="/support/donors">
                     <Donors />
+                </Route>
+                <Route path="/support/sponsors">
+                    <Sponsors />
                 </Route>
             </Switch>
 
