@@ -3,8 +3,8 @@ import React from "react"
 
 function Footer() {
     return (
-        <footer>
-            <p className="footer">©2020 - Storytellers Macon</p>
+        <footer className="bg-light">
+            <p className=" footer">©2020 - Storytellers Macon</p>
         </footer>
     )
 }
