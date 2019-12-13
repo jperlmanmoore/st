@@ -13,6 +13,7 @@ import SpecialEvents from './pages/events/SpecialEvents'
 import UpcomingEvents from './pages/events/UpcomingEvents'
 import Youtube from './pages/media/Youtube'
 import News from './pages/media/News'
+import Donate from './pages/support/Donate'
 
 import { Switch, Route } from "react-router-dom"
 
@@ -60,6 +61,9 @@ function App() {
                 </Route>
                 <Route path="/support/sponsors">
                     <Sponsors />
+                </Route>
+                <Route path="/support/donate">
+                    <Donate />
                 </Route>
             </Switch>
 

@@ -48,130 +48,49 @@ export default class ContactUs extends React.Component {
 
   render() {
     return (
-
-      <Form className="mx-5" onSubmit={this.handleSubmit}>
-        <FormGroup>
-          <Label for="exampleEmail">Name</Label>
-          <Input id="name"
-            type="text"
-            value={this.state.name}
-            onChange={this.handleChange.bind(this, 'name')}
-            name="name"
-            placeholder="name (required)" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="examplePassword">Phone</Label>
-          <Input id="phone"
-             type="tel"
-             value={this.state.phone}
-             onChange={this.handleChange.bind(this, 'phone')}
-             name="phone"
-             placeholder="phone (required)" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="examplePassword">Email</Label>
-          <Input id="email"
-            type="email"
-            value={this.state.email}
-            onChange={this.handleChange.bind(this, 'email')}
-            name="email"
-            placeholder="email (required)" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="exampleText">Text Area</Label>
-          <Input id="message"
-            type="text"
-            onChange={this.handleChange.bind(this, 'feedback')}
-            placeholder="Type your message here"
-            required
-            name="feedback"
-            value={this.state.feedback}
-            style={{ width: '50%', height: '150px' }} />
-        </FormGroup>
-        <Button type="submit" value="Send">Submit</Button>
-      </Form>
-
-
-
-      //   <form className="webpage-mailing" onSubmit={this.handleSubmit}>
-      //     <h1>Contact Us</h1>
-      //     <input
-      //       id="name"
-      //       type="text"
-      //       value={this.state.name}
-      //       onChange={this.handleChange.bind(this, 'name')}
-      //       name="name"
-      //       placeholder="name (required)"
-      //     />
-      //     <input
-      //       id="email"
-      //       type="email"
-      //       value={this.state.email}
-      //       onChange={this.handleChange.bind(this, 'email')}
-      //       name="email"
-      //       placeholder="email (required)"
-      //     />
-      //     <input
-      //       id="phone"
-      //       type="tel"
-      //       value={this.state.phone}
-      //       onChange={this.handleChange.bind(this, 'phone')}
-      //       name="phone"
-      //       placeholder="phone (required)"
-      //     />
-      //     <textarea
-      //       id="message"
-      //       type="text"
-      //       onChange={this.handleChange.bind(this, 'feedback')}
-      //       placeholder="Type your message here"
-      //       required
-      //       name="feedback"
-      //       value={this.state.feedback}
-      //       style={{ width: '50%', height: '150px' }}
-      //     />
-      //    <input type="submit" value="Send" />
-      // </form>
+      <div style={{marginTop: 150, height: 600, display: "flex", justifyContent: "center", alignItems: "center"}}>
+        <Form style={{width: 750}}className="mx-5" onSubmit={this.handleSubmit}>
+          <FormGroup>
+            <Label for="exampleEmail">Name</Label>
+            <Input id="name"
+              type="text"
+              value={this.state.name}
+              onChange={this.handleChange.bind(this, 'name')}
+              name="name"
+              placeholder="name (required)" />
+          </FormGroup>
+          <FormGroup>
+            <Label for="examplePassword">Phone</Label>
+            <Input id="phone"
+              type="tel"
+              value={this.state.phone}
+              onChange={this.handleChange.bind(this, 'phone')}
+              name="phone"
+              placeholder="phone (required)" />
+          </FormGroup>
+          <FormGroup>
+            <Label for="examplePassword">Email</Label>
+            <Input id="email"
+              type="email"
+              value={this.state.email}
+              onChange={this.handleChange.bind(this, 'email')}
+              name="email"
+              placeholder="email (required)" />
+          </FormGroup>
+          <FormGroup>
+            <Label for="exampleText">Text Area</Label>
+            <Input id="message"
+              type="text"
+              onChange={this.handleChange.bind(this, 'feedback')}
+              placeholder="Type your message here"
+              required
+              name="feedback"
+              value={this.state.feedback}
+              style={{ width: '100%', height: '150px' }} />
+          </FormGroup>
+          <Button type="submit" value="Send">Submit</Button>
+        </Form>
+      </div>
     )
   }
 }
-
-// import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
-
-// const Example = (props) => {
-//   return (
-//     <Form>
-//       <FormGroup>
-//         <Label for="exampleEmail">Name</Label>
-//         <Input id="name"
-//             type="text"
-//             value={this.state.name}
-//             onChange={this.handleChange.bind(this, 'name')}
-//             name="name"
-//             placeholder="name (required)" />
-//       </FormGroup>
-//       <FormGroup>
-//         <Label for="examplePassword">Email</Label>
-//         <Input id="email"
-//             type="email"
-//             value={this.state.email}
-//             onChange={this.handleChange.bind(this, 'email')}
-//             name="email"
-//             placeholder="email (required)" />
-//       </FormGroup>
-//       <FormGroup>
-//         <Label for="exampleText">Text Area</Label>
-//         <Input id="message"
-//             type="text"
-//             onChange={this.handleChange.bind(this, 'feedback')}
-//             placeholder="Type your message here"
-//             required
-//             name="feedback"
-//             value={this.state.feedback}
-//             style={{ width: '50%', height: '150px' }} />
-//       </FormGroup>
-//       <Button type="submit" value="Send">Submit</Button>
-//     </Form>
-//   );
-// }
-
-// export default Example;
