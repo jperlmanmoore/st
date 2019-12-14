@@ -21,7 +21,6 @@ function App() {
     return (
         <div>
             <Header />
-
             <Switch>
                 <Route exact path="/">
                     <Home />
@@ -66,7 +65,6 @@ function App() {
                     <Donate />
                 </Route>
             </Switch>
-
             <Footer />
         </div>
     )
