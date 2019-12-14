@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.245b0800.chunk.css",
-    "main.js": "/static/js/main.f4627571.chunk.js",
-    "main.js.map": "/static/js/main.f4627571.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.997e7832.js",
-    "runtime-main.js.map": "/static/js/runtime-main.997e7832.js.map",
-    "static/js/2.73840fb9.chunk.js": "/static/js/2.73840fb9.chunk.js",
-    "static/js/2.73840fb9.chunk.js.map": "/static/js/2.73840fb9.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.407a5044df7dcb591c9c0800a0b08092.js": "/precache-manifest.407a5044df7dcb591c9c0800a0b08092.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.245b0800.chunk.css.map": "/static/css/main.245b0800.chunk.css.map",
-    "static/js/2.73840fb9.chunk.js.LICENSE": "/static/js/2.73840fb9.chunk.js.LICENSE",
-    "static/media/transparent_storytellers.png": "/static/media/transparent_storytellers.bbff4491.png",
-    "static/media/home.css": "/static/media/yellowshirt.070c6858.jpg"
+    "main.css": "/st/static/css/main.e180561f.chunk.css",
+    "main.js": "/st/static/js/main.eebbb889.chunk.js",
+    "main.js.map": "/st/static/js/main.eebbb889.chunk.js.map",
+    "runtime-main.js": "/st/static/js/runtime-main.f4662b36.js",
+    "runtime-main.js.map": "/st/static/js/runtime-main.f4662b36.js.map",
+    "static/js/2.73840fb9.chunk.js": "/st/static/js/2.73840fb9.chunk.js",
+    "static/js/2.73840fb9.chunk.js.map": "/st/static/js/2.73840fb9.chunk.js.map",
+    "index.html": "/st/index.html",
+    "precache-manifest.e818e4bfb929b869ed6ad175eac7c5bb.js": "/st/precache-manifest.e818e4bfb929b869ed6ad175eac7c5bb.js",
+    "service-worker.js": "/st/service-worker.js",
+    "static/css/main.e180561f.chunk.css.map": "/st/static/css/main.e180561f.chunk.css.map",
+    "static/js/2.73840fb9.chunk.js.LICENSE": "/st/static/js/2.73840fb9.chunk.js.LICENSE",
+    "static/media/transparent_storytellers.png": "/st/static/media/transparent_storytellers.bbff4491.png",
+    "static/media/home.css": "/st/static/media/yellowshirt.070c6858.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.997e7832.js",
+    "static/js/runtime-main.f4662b36.js",
     "static/js/2.73840fb9.chunk.js",
-    "static/css/main.245b0800.chunk.css",
-    "static/js/main.f4627571.chunk.js"
+    "static/css/main.e180561f.chunk.css",
+    "static/js/main.eebbb889.chunk.js"
   ]
 }
