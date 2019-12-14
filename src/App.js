@@ -23,7 +23,7 @@ function App() {
             <Header />
 
             <Switch>
-                <Route exact path="/">
+                <Route exact path={`/`} render={ (routerProps) => < Home routerProps={routerProps} />}>
                     <Home />
                 </Route>
                 <Route path="/about">
