@@ -49,7 +49,7 @@ export default class ContactUs extends React.Component {
   render() {
     return (
       <div style={{marginTop: 150, height: 600, display: "flex", justifyContent: "center", alignItems: "center"}}>
-        <Form style={{width: 750}}className="mx-5" onSubmit={this.handleSubmit}>
+        <Form autocomplete={true} style={{width: 750}}className="mx-5" onSubmit={this.handleSubmit}>
           <FormGroup>
             <Label for="exampleEmail">Name</Label>
             <Input id="name"
@@ -60,13 +60,14 @@ export default class ContactUs extends React.Component {
               placeholder="name (required)" />
           </FormGroup>
           <FormGroup>
-            <Label for="examplePassword">Phone</Label>
+            <Label for="examplePhone">Phone</Label>
             <Input id="phone"
+              pattern="((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}"
               type="tel"
               value={this.state.phone}
               onChange={this.handleChange.bind(this, 'phone')}
               name="phone"
-              placeholder="phone (required)" />
+              placeholder="phone (123) 456-7890 (required)" />
           </FormGroup>
           <FormGroup>
             <Label for="examplePassword">Email</Label>
