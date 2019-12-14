@@ -17,8 +17,6 @@
     "reactstrap": "^8.2.0"
   },
   "scripts": {
-      "predeploy": "npm run build",
-      "deploy": "gh-pages -d build",
       "start": "react-scripts start",
       "build": "react-scripts build"
   },
@@ -36,6 +34,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "homepage": "http://jperlmanmoore.github.io/st"
+  }
 }
