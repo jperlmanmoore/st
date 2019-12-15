@@ -12,7 +12,7 @@ export default function Home() {
         <Container fluid={true}>
           <Row>
             <Col>
-              <div color="light" style={{ lineHeight: 1.25, marginTop: 425, fontSize: "6vw", textAlign: "right", fontStyle: "italic", fontSynthesis: "bold", marginRight: 25 }} className="text-white">Speak<br></br>Your Truth</div>
+              <div style={{ lineHeight: 1.25, marginTop: 425, fontSize: "6vw", textAlign: "right", fontStyle: "italic", fontSynthesis: "bold", marginRight: 25 }} className="text-warning">Speak<br></br>Your Truth</div>
             </Col>
           </Row>
         </Container>
