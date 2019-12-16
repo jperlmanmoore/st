@@ -38,24 +38,14 @@ const Example = (props) => {
 
             <UncontrolledDropdown nav inNavbar className="mx-2">
               <DropdownToggle nav className="text-dark">
-                Support
+                Sponsors & Donors
               </DropdownToggle>
               <DropdownMenu center="true">
                 <DropdownItem>
                 <NavItem>
-              <NavLink className="text-dark" href="/support/donors/">Donors</NavLink>
-            </NavItem>
-                </DropdownItem>
-                <DropdownItem>
-                <NavItem>
               <NavLink className="text-dark" href="/support/sponsors/">Sponsors</NavLink>
             </NavItem>
-                </DropdownItem> 
-                <DropdownItem>
-                <NavItem>
-              <NavLink className="text-dark" href="/support/donate/">Donate</NavLink>
-            </NavItem>
-                </DropdownItem>              
+                </DropdownItem>               
               </DropdownMenu>
             </UncontrolledDropdown>
             

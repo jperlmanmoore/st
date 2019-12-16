@@ -5,6 +5,7 @@ import Home from "./pages/home/Home"
 import About from "./pages/about/About"
 import ContactUS from './pages/contactus/ContactUs'
 import Media from './pages/media/Media'
+import Support from "./pages/support/Support"
 import Sponsors from "./pages/support/Sponsors"
 import Events from './pages/events/Events'
 import SpecialEvents from './pages/events/SpecialEvents'
@@ -48,6 +49,9 @@ function App() {
                 </Route>
                 <Route path="/contactus">
                     <ContactUS />
+                </Route>
+                <Route exact path="/support">
+                    <Support />
                 </Route>
                 <Route path="/support/sponsors">
                     <Sponsors />

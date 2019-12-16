@@ -3,7 +3,7 @@ import React from 'react';
 function Sponsors() {
   return (
     <div>
-      <h2>Sponsors & Donors</h2>
+     <h1 className="text-dark" style={{ font: "4vw", marginTop: "250px"}}>Sponsors & Donors</h1>
       <p>
         Macon Arts Alliance - https://www.maconartsalliance.org/
         B.P. O'Neal Trust - 
