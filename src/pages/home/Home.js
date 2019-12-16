@@ -37,6 +37,8 @@ export default function Home() {
                   Originally started by Crossroads with a Community Foundation Grant, the Storytellers event has been passed along to past resident Angel Collins and then on to Koryn Young, who is the current executive director along with volunteers Kevin Bradley, Rachel Gambill and George Caubil.
                   The event social begins at 6:30 pm and stories start promptly at 7:00 pm. Join us for this FREE event and hear what "off the beaten path" stories we have to offer. Storytellers are friendly, open, moving, life affirming, shocking, captivating, intimate, honest or just plain hilarious. Sign up to tell a story or grab a beer and some food and just listen.
               </p>
+              <br></br>
+              <br></br>
               <img src={grants} alt='grants' style={{width: "40%" , float: "left"}}/>
                 <b></b>
                 <p>
