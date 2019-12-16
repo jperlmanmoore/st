@@ -39,6 +39,7 @@ export default function Home() {
               </p>
               <br></br>
               <br></br>
+              
               <img src={grants} alt='grants' style={{width: "40%" , float: "left"}}/>
                 <b></b>
                 <p>

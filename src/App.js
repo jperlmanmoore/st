@@ -5,15 +5,12 @@ import Home from "./pages/home/Home"
 import About from "./pages/about/About"
 import ContactUS from './pages/contactus/ContactUs'
 import Media from './pages/media/Media'
-import Support from './pages/support/Support'
 import Sponsors from "./pages/support/Sponsors"
-import Donors from './pages/support/Donors'
 import Events from './pages/events/Events'
 import SpecialEvents from './pages/events/SpecialEvents'
 import UpcomingEvents from './pages/events/UpcomingEvents'
 import Youtube from './pages/media/Youtube'
 import News from './pages/media/News'
-import Donate from './pages/support/Donate'
 
 import { Switch, Route } from "react-router-dom"
 
@@ -52,17 +49,8 @@ function App() {
                 <Route path="/contactus">
                     <ContactUS />
                 </Route>
-                <Route exact path="/support">
-                    <Support />
-                </Route>
-                <Route path="/support/donors">
-                    <Donors />
-                </Route>
                 <Route path="/support/sponsors">
                     <Sponsors />
-                </Route>
-                <Route path="/support/donate">
-                    <Donate />
                 </Route>
             </Switch>
             <Footer />

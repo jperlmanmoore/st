@@ -3,7 +3,7 @@ import React from 'react';
 function Sponsors() {
   return (
     <div>
-      <h2>Sponsors</h2>
+      <h2>Sponsors & Donors</h2>
       <p>
         Macon Arts Alliance - https://www.maconartsalliance.org/
         B.P. O'Neal Trust - 

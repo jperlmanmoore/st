@@ -43,17 +43,17 @@ const Example = (props) => {
               <DropdownMenu center="true">
                 <DropdownItem>
                 <NavItem>
-              <NavLink className="text-dark" href="/support/donors">Donors</NavLink>
+              <NavLink className="text-dark" href="/support/donors/">Donors</NavLink>
             </NavItem>
                 </DropdownItem>
                 <DropdownItem>
                 <NavItem>
-              <NavLink className="text-dark" href="/support/sponsors">Sponsors</NavLink>
+              <NavLink className="text-dark" href="/support/sponsors/">Sponsors</NavLink>
             </NavItem>
                 </DropdownItem> 
                 <DropdownItem>
                 <NavItem>
-              <NavLink className="text-dark" href="/support/donate">Donate</NavLink>
+              <NavLink className="text-dark" href="/support/donate/">Donate</NavLink>
             </NavItem>
                 </DropdownItem>              
               </DropdownMenu>
@@ -66,12 +66,12 @@ const Example = (props) => {
               <DropdownMenu center="true">
                 <DropdownItem>
                 <NavItem>
-              <NavLink className="text-dark" href="/media/youtube">Youtube</NavLink>
+              <NavLink className="text-dark" href="/media/youtube/">Youtube</NavLink>
             </NavItem>
                 </DropdownItem>
                 <DropdownItem>
                 <NavItem>
-              <NavLink className="text-dark" href="/media/news">News</NavLink>
+              <NavLink className="text-dark" href="/media/news/">News</NavLink>
             </NavItem>
                 </DropdownItem>              
               </DropdownMenu>
@@ -82,14 +82,19 @@ const Example = (props) => {
                 Events
               </DropdownToggle>
               <DropdownMenu right>
-                <DropdownItem>
+              <DropdownItem>
                 <NavItem>
-              <NavLink className="text-dark" href="/events/specialevents">Special Events</NavLink>
+              <NavLink className="text-dark" href="/events/featuredstoryteller/">Featured Storyteller</NavLink>
             </NavItem>
                 </DropdownItem>
                 <DropdownItem>
                 <NavItem>
-              <NavLink className="text-dark" href="/events/upcomingevents">Upcoming Events</NavLink>
+              <NavLink className="text-dark" href="/events/specialevents/">Special Events</NavLink>
+            </NavItem>
+                </DropdownItem>
+                <DropdownItem>
+                <NavItem>
+              <NavLink className="text-dark" href="/events/upcomingevents/">Upcoming Events</NavLink>
             </NavItem>
                 </DropdownItem>              
               </DropdownMenu>
