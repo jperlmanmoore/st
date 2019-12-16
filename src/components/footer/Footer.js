@@ -3,7 +3,7 @@ import React from "react"
 
 function Footer() {
     return (
-        <footer className="bg-light">
+        <footer className=" fixed-bottom bg-light">
             <p className=" footer">©2020 - Storytellers Macon</p>
         </footer>
     )
