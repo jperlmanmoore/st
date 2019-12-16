@@ -66,13 +66,14 @@ const Example = (props) => {
                 </DropdownItem>              
               </DropdownMenu>
             </UncontrolledDropdown>
-           
-            <UncontrolledDropdown nav inNavbar className="mx-2">
-              <DropdownToggle className="text-dark" nav>
+
+
+            <UncontrolledDropdown  nav inNavbar className="mx-2">
+              <DropdownToggle nav className="text-dark">
                 Events
               </DropdownToggle>
-              <DropdownMenu right>
-              <DropdownItem>
+              <DropdownMenu center="true">
+                <DropdownItem>
                 <NavItem>
               <NavLink className="text-dark" href="/events/featuredstoryteller/">Featured Storyteller</NavLink>
             </NavItem>
@@ -81,14 +82,14 @@ const Example = (props) => {
                 <NavItem>
               <NavLink className="text-dark" href="/events/specialevents/">Special Events</NavLink>
             </NavItem>
-                </DropdownItem>
+                </DropdownItem> 
                 <DropdownItem>
                 <NavItem>
               <NavLink className="text-dark" href="/events/upcomingevents/">Upcoming Events</NavLink>
             </NavItem>
                 </DropdownItem>              
               </DropdownMenu>
-            </UncontrolledDropdown>
+            </UncontrolledDropdown>          
           
           </Nav>
         </Collapse>

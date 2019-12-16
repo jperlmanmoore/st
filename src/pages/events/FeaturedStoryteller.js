@@ -3,8 +3,10 @@ import React from 'react';
 function FeaturedStoryteller() {
     return (
       <div>
-      <h2 style={{marginTop: 150, height: 600, display: "flex", justifyContent: "center", alignItems: "center"}} className="text-dark">News</h2>
-      <p className="text-dark">test test test</p>
+     <h1 className="text-dark" style={{ font: "4vw", marginTop: "150px"}}>Featured Storyteller</h1>
+      <p>
+       telling stories all night long
+        </p>
     </div>
     );
   };

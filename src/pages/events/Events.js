@@ -31,6 +31,7 @@ function Events() {
             <ul>
                 <li><Link to="/events/specialevents">Special Events</Link></li>
                 <li><Link to="/events/upcomingevents">Upcoming Events</Link></li>
+                <li><Link to="/events/featuredstoryteller">Featured Storyteller</Link></li>
             </ul>
 
         </div>

@@ -8,6 +8,7 @@ import Media from './pages/media/Media'
 import Support from "./pages/support/Support"
 import Sponsors from "./pages/support/Sponsors"
 import Events from './pages/events/Events'
+import FeaturedStoryteller from './pages/events/FeaturedStoryteller'
 import SpecialEvents from './pages/events/SpecialEvents'
 import UpcomingEvents from './pages/events/UpcomingEvents'
 import Youtube from './pages/media/Youtube'
@@ -20,12 +21,15 @@ function App() {
         <div>
             <Header />
             <Switch>
+                
                 <Route exact path="/">
                     <Home />
                 </Route>
-                <Route path="/about">
+                
+                <Route exact path="/about">
                     <About />
                 </Route>
+                
                 <Route exact path="/events">
                     <Events />
                 </Route>
@@ -35,6 +39,10 @@ function App() {
                 <Route path="events/specialevents">
                     <SpecialEvents />
                 </Route>
+                <Route path="events/featuredstoryteller">
+                    <FeaturedStoryteller />
+                </Route>
+                
                 <Route exact path="/media">
                     <Media />
                 </Route>
@@ -44,9 +52,7 @@ function App() {
                 <Route path="/media/news">
                     <News />
                 </Route>
-                <Route path="/about">
-                    <About />
-                </Route>
+                
                 <Route path="/contactus">
                     <ContactUS />
                 </Route>
