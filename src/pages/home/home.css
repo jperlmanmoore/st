@@ -13,7 +13,7 @@
   }
 
 
-@media only screen and (min-width: 410px) and (max-width: 1046px) {
+/* @media only screen and (min-width: 410px) and (max-width: 1046px) {
   .homepage {
     background: url("../../images/bw.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -26,6 +26,7 @@
     max-width: 100vw;
     flex-direction: column;
     text-align: center;
+    background-color: #F8F9FA;
   }
 }
 
@@ -43,6 +44,7 @@
     max-width: 100vw;
     flex-direction: column;
     text-align: center;
+    background-color: #F8F9FA;
   }
 };
 
@@ -59,5 +61,6 @@
     max-width: 100vw;
     flex-direction: column;
     text-align: center;
+    background-color: #F8F9FA;
   }
-};
+}; */
