@@ -33,13 +33,13 @@ function App() {
                 <Route exact path="/events">
                     <Events />
                 </Route>
-                <Route path="events/upcomingevents">
+                <Route path="/events/upcomingevents">
                     <UpcomingEvents />
                 </Route>
-                <Route path="events/specialevents">
+                <Route path="/events/specialevents">
                     <SpecialEvents />
                 </Route>
-                <Route path="events/featuredstoryteller">
+                <Route path="/events/featuredstoryteller">
                     <FeaturedStoryteller />
                 </Route>
                 
