@@ -4,11 +4,12 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     opacity: 50;
-    background-size: contain;
+    background-size: cover;
     display: flex;
     height: 100%;
     max-width: 100vw;
     flex-direction: column;
+    text-align: center;
   }
 
 
