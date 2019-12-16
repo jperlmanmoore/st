@@ -33,7 +33,7 @@ export default class ContactUs extends React.Component {
       email: email,
       to_name: 'jperlmanmoore_gmail_com',
       phone: phone,
-      message_html: feedback
+      message_html: feedback, 
     }
 
     emailjs.send('jperlmanmoore_gmail_com', templateId, templateParams, 'user_UqnZQoorvEdUtf7NT2dM1')
@@ -48,8 +48,8 @@ export default class ContactUs extends React.Component {
 
   render() {
     return (
-      <div style={{marginTop: 150, height: 600, display: "flex", justifyContent: "center", alignItems: "center"}}>
-        <Form autoComplete={true} style={{width: 750}}className="mx-5" onSubmit={this.handleSubmit}>
+      <div style={{marginTop: 150, height: 700, display: "flex", justifyContent: "center", alignItems: "center"}}>
+        <Form autoComplete style={{width: 750}}className="mx-5" onSubmit={this.handleSubmit}>
           <FormGroup>
             <Label for="exampleEmail">Name</Label>
             <Input id="name"

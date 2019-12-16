@@ -1,29 +1,63 @@
 .homepage {
-    background:
-    url('../../images/bw.jpg') no-repeat center center fixed;
+    background: url("../../images/bw.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size:cover;
+    -o-background-size: cover;
     opacity: 50;
-    background-size:cover;
+    background-size: cover;
     display: flex;
-    min-height: 100vh;
+    height: 100%;
+    max-width: 100vw;
     flex-direction: column;
     text-align: center;
+  }
+
+
+@media only screen and (min-width: 410px) and (max-width: 1046px) {
+  .homepage {
+    background: url("../../images/bw.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    opacity: 50;
+    background-size: contain;
+    display: flex;
+    height: 100%;
+    max-width: 100vw;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
-/* .speak {
-    margin-top: 350px;
-    font-size: 7.5vw;
-    align-t;
-    margin-right: 25px;
-    font-style: italic;
-}
+@media only screen and (max-width: 375px) {
+  .homepage {
+    background: url("../../images/bw.jpg") no-repeat center center
+      fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    opacity: 50;
+    background-size: contain;
+    display: flex;
+    height: auto;
+    max-width: 100vw;
+    flex-direction: column;
+    text-align: center;
+  }
+};
 
-.yourtruth {
-    margin-top: 475px;
-    font-size: 7.5vw;
-    
-    margin-right: 25px;
-    font-style: italic;
-} */
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+  .homepage {
+    background: url("../../images/bw.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    opacity: 50;
+    background-size: contain;
+    display: flex;
+    height: 100%;
+    max-width: 100vw;
+    flex-direction: column;
+    text-align: center;
+  }
+};
