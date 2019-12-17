@@ -1,66 +1,28 @@
 .homepage {
-    background: url("../../images/bw.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    opacity: 50;
+    height: 100vh;
     background-size: cover;
-    display: flex;
-    height: 100%;
-    max-width: 100vw;
-    flex-direction: column;
-    text-align: center;
+    background-repeat: no-repeat;
+    background-position: top center;
+  };
+
+.homepageContent{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px;
+  font-style: italic;
+  font-weight: bolder;
+  margin-top: 450px;
+}  
+
+@media (min-width: 650px) {
+.homepage {
+  background-position: center center;
   }
 
-
-/* @media only screen and (min-width: 410px) and (max-width: 1046px) {
-  .homepage {
-    background: url("../../images/bw.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    opacity: 50;
-    background-size: contain;
-    display: flex;
-    height: 100%;
-    max-width: 100vw;
-    flex-direction: column;
-    text-align: center;
-    background-color: #F8F9FA;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .homepage {
-    background: url("../../images/bw.jpg") no-repeat center center
-      fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    opacity: 50;
-    background-size: contain;
-    display: flex;
-    height: auto;
-    max-width: 100vw;
-    flex-direction: column;
-    text-align: center;
-    background-color: #F8F9FA;
-  }
-};
-
-@media only screen and (min-width: 376px) and (max-width: 414px) {
-  .homepage {
-    background: url("../../images/bw.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    opacity: 50;
-    background-size: contain;
-    display: flex;
-    height: 100%;
-    max-width: 100vw;
-    flex-direction: column;
-    text-align: center;
-    background-color: #F8F9FA;
-  }
-}; */
+.homepageContent {
+  align-items: flex-end;
+  justify-content: center
+}};
