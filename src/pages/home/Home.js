@@ -4,7 +4,7 @@ import "./Home.css";
 import { Container, Row, Col } from 'reactstrap';
 import grants from "../../images/illustration.jpg";
 import bw from "../../images/bw.jpg";
-import bwMobile from "../../images/bwmobile.jpg";
+import bwMobile from "../../images/bwmobile2.jpg";
 
 const Home = () => {
 
