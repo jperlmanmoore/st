@@ -5,25 +5,8 @@
     background-position: top center;
   };
 
-/* .homepageContent{
-  height: 100%;
-  float: left;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 40px;
-  font-style: italic;
-  font-weight: bolder;
-}   */
-
 @media (min-width: 650px) {
 .homepage {
   background-position: center center;
   }
-
-.homepageContent {
-  color: rgb(231, 217, 93);
-  z-index: 10;
-  align-items: flex-end;
-  justify-content: center
-}};
+};

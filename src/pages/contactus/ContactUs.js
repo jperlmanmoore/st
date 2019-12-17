@@ -79,7 +79,7 @@ export default class ContactUs extends React.Component {
               placeholder="email (required)" />
           </FormGroup>
           <FormGroup>
-            <Label for="exampleText">Text Area</Label>
+            <Label for="exampleText">Tell us something...</Label>
             <Input id="message"
               type="text"
               onChange={this.handleChange.bind(this, 'feedback')}

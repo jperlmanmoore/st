@@ -72,7 +72,7 @@ const Example = (props) => {
               <DropdownToggle nav className="text-dark">
                 Events
               </DropdownToggle>
-              <DropdownMenu center="true">
+              <DropdownMenu right="true">
                 <DropdownItem>
                 <NavItem>
               <NavLink className="text-dark" href="/events/featuredstoryteller/">Featured Storyteller</NavLink>

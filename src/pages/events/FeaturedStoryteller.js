@@ -8,7 +8,7 @@ export default class FeaturedStoryteller extends React.Component {
     email: '',
     phone: '',
     feedback: '',
-    application: '',
+    submission: '',
   }
 
   handleChange = (param, e) => {
@@ -21,22 +21,13 @@ export default class FeaturedStoryteller extends React.Component {
       email: '',
       phone: '',
       feedback: '',
+      submission: '',
     })
   };
 
   handleSubmit = e => {
     e.preventDefault();
     const templateId = 'template_OoG9Ihf4';
-    // const { name, email, phone, feedback, doc } = this.state
-
-    // let templateParams = {
-    //   from_name: name,
-    //   email: email,
-    //   to_name: 'jperlmanmoore_gmail_com',
-    //   phone: phone,
-    //   message_html: feedback,
-    //   application: doc,
-    // }
 
     emailjs.sendForm('jperlmanmoore_gmail_com', templateId, e.target, 'user_UqnZQoorvEdUtf7NT2dM1')
       .then((result) => {
@@ -81,7 +72,7 @@ export default class FeaturedStoryteller extends React.Component {
               placeholder="email (required)" />
           </FormGroup>
           <FormGroup>
-            <Label for="exampleText">Text Area</Label>
+            <Label for="exampleText">Tell us about yourself</Label>
             <Input id="message"
               type="text" 
               onChange={this.handleChange.bind(this, 'feedback')}
@@ -92,12 +83,15 @@ export default class FeaturedStoryteller extends React.Component {
               style={{ width: '100%', height: '150px' }} />
           </FormGroup>
           <FormGroup>
-            <Label for="exampleFile">File</Label>
-            <Input type="file" name="file" id="exampleFile" onChange={this.handleChange.bind(this, 'doc')} />
-            <FormText color="muted">
-              This is some placeholder block-level help text for the above input.
-              It's a bit lighter and easily wraps to a new line.
-        </FormText>
+          <Label for="exampleText">Submission</Label>
+            <Input id="submission"
+              type="text" 
+              onChange={this.handleChange.bind(this, 'fsubmission')}
+              placeholder="link to your submission"
+              required
+              name="submission"
+              value={this.state.submission}
+             />
           </FormGroup>
           <Button type="submit" value="Send">Submit</Button>
         </Form>
