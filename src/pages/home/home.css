@@ -5,17 +5,16 @@
     background-position: top center;
   };
 
-.homepageContent{
+/* .homepageContent{
   height: 100%;
-  display: flex;
+  float: left;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   padding: 40px;
   font-style: italic;
   font-weight: bolder;
-  margin-top: 450px;
-}  
+}   */
 
 @media (min-width: 650px) {
 .homepage {
@@ -23,6 +22,8 @@
   }
 
 .homepageContent {
+  color: rgb(231, 217, 93);
+  z-index: 10;
   align-items: flex-end;
   justify-content: center
 }};

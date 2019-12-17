@@ -13,10 +13,9 @@ const Home = () => {
   return (
     <div>
     <div className="homepage" style={{ backgroundImage: `url(${imageUrl})` }}>
-      {/* <img src={bw} alt='grants' className="img-fluid" style={{zIndex: 1, marginTop: "100px"}}/> */}
-      <div class="homepageContent">
-        <h1>Speak</h1>
-        <h1>Your Truth</h1>
+      <div >
+        <h1 className='text-warning' style={{position: 'absolute', top: '75%', right: '20%' }}>Speak</h1>
+        <h1 className='text-warning' style={{position: 'absolute', top: '75%', right: '20%' }}>Your Truth</h1>
         
       </div>
     </div>
