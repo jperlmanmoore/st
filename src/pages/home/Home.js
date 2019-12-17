@@ -14,8 +14,8 @@ const Home = () => {
     <div>
     <div className="homepage" style={{ backgroundImage: `url(${imageUrl})` }}>
       <div >
-        <h1 className='text-warning' style={{position: 'absolute', top: '75%', right: '20%' }}>Speak</h1>
-        <h1 className='text-warning' style={{position: 'absolute', top: '75%', right: '20%' }}>Your Truth</h1>
+        <p className='text-warning' style={{position: 'absolute', top: '75%', right: '15%', fontSize: '10vh', fontStyle: 'italic' }}>Speak</p>
+        <p className='text-warning' style={{position: 'absolute', top: '85%', right: '15%', fontSize: '10vh', fontStyle: 'italic' }}>Your Truth</p>
         
       </div>
     </div>
