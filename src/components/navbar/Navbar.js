@@ -23,7 +23,7 @@ const Example = (props) => {
   return (
     <div>
       <Navbar className="fixed-top text-dark" color="light" light expand="md">
-        <NavbarBrand  href="/"><img className="logo" alt="logo" src={logo}/></NavbarBrand>
+        <NavbarBrand  className="ml-5" href="/"><img className="logo" alt="logo" src={logo}/></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto mt-5 pt-4" navbar>
