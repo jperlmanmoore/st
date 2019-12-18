@@ -4,7 +4,7 @@ import React from "react"
 function Footer() {
     return (
         <footer className=" fixed-bottom bg-light">
-            <p className=" footer">©2020 - Storytellers Macon</p>
+            <p className="footer text-dark" style={{ fontWeight: 'lighter', textAlign: 'center'}}>©2020 - Storytellers Macon</p>
         </footer>
     )
 }
