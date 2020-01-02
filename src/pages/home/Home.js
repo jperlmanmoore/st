@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
-// import "./Home.css";
+import "./Home.css";
 import { Container, Row, Col } from 'reactstrap';
 import grants from "../../images/image2.jpg";
 // import grantsMobile from "../../images/image3.jpg";
 import bw from "../../images/bw2.jpg";
 import bwMobile from "../../images/bwmobile2.jpg";
 
-
 const Home = () => {
-
+  
   const imageUrl = useWindowWidth() >= 650 ? bw : bwMobile;
 
   return (

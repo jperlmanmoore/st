@@ -1,14 +1,12 @@
 .homepage {
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
-  };
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
 
 @media (min-width: 650px) {
-.homepage {
-  background-position: center center;
+  .homepage {
+    background-position: center center;
   }
-};
-
-
+}
