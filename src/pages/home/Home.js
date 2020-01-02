@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import "./Home.css";
+// import "./Home.css";
 import { Container, Row, Col } from 'reactstrap';
 import grants from "../../images/image2.jpg";
 // import grantsMobile from "../../images/image3.jpg";
@@ -12,7 +12,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="homepage" style={{ backgroundImage: `url(${imageUrl})` }}>
+      <div className="homepage" style={{ backgroundImage: `url(${imageUrl})`, height: '100vh', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'top center'}}>
         <div >
           <p className='text-warning' style={{ position: 'absolute', top: '65%', right: '15%', fontSize: '8vh', fontStyle: 'italic' }}>Speak</p>
           <p className='text-warning' style={{ position: 'absolute', top: '75%', right: '15%', fontSize: '8vh', fontStyle: 'italic' }}>Your Truth</p>
